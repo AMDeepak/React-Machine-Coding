@@ -1,0 +1,32 @@
+.sidebar {
+  width: 300px;
+  background-color: black;
+  padding: 10px;
+  height: 100vh;
+}
+
+.nodes li {
+  list-style: none;
+}
+
+.nodes li a {
+  color: #0097e6;
+  text-decoration: none;
+}
+.nodes li a:hover {
+  text-decoration: underline;
+}
+
+.node .label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.node .label button {
+  line-height: 0;
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
