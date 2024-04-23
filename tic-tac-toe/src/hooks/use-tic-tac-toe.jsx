@@ -6,6 +6,27 @@ const useTicTacToe = () => {
   const [board, setBoard] = useState(initialBoard());
   const [isNextX, setisNextX] = useState(true);
 
+  /*
+   function findWinningPatterns(n) {
+    const WINNING_PATTERNS =[];
+
+    // for rows & colums
+    for(let i=0;i<n;i++){
+      WINNING_PATTERNS.push([[i,0],[i,1],[i,2],[i,3]])
+      WINNING_PATTERNS.push([[0,i],[1,i],[2,i],[3,i]])
+    }
+
+    // for diagonal
+    let d1 = [];
+    let d2 = [];
+    for(let i=0;i<n;i++){
+      d1.push([i,i])
+      d2.push([i, n - 1 -i])
+    }
+    return WINNING_PATTERNS.push(d1,d2);
+
+   }
+   */
   const WINNING_PATTERS = [
     [0, 1, 2],
     [3, 4, 5],
