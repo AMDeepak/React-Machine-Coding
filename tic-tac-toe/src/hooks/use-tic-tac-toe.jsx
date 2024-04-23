@@ -26,6 +26,45 @@ const useTicTacToe = () => {
     return WINNING_PATTERNS.push(d1,d2);
 
    }
+
+
+   ex:2
+
+
+   function findWinningPatterns(board) {
+    const size = board.length;
+    let winningPatterns = [];
+
+    // Check rows and columns
+    for (let i = 0; i < size; i++) {
+        let rowPattern = [];
+        let colPattern = [];
+        for (let j = 0; j < size; j++) {
+            rowPattern.push(i * size + j);
+            colPattern.push(j * size + i);
+        }
+        winningPatterns.push(rowPattern, colPattern);
+    }
+
+    // Check diagonals
+    let diagonal1 = [];
+    let diagonal2 = [];
+    for (let i = 0; i < size; i++) {
+        diagonal1.push(i * size + i);
+        diagonal2.push(i * size + size - 1 - i);
+    }
+    winningPatterns.push(diagonal1, diagonal2);
+
+    return winningPatterns;
+}
+
+// Example usage
+let board = [
+    ['X', 'O', 'X', 'O'],
+    ['X', 'X', 'O', 'O'],
+    ['X', 'O', 'O', 'X'],
+    ['O', 'X', 'X', 'O']
+];
    */
   const WINNING_PATTERS = [
     [0, 1, 2],
