@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.commentsContainer {
+  background-color: lightgray;
+  border: 1px solid black;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+}
